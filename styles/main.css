@@ -1,3 +1,15 @@
+/* root styles */
+
+/* :root {
+  background-color: blue;
+} */
+
+/* element styles */
+
 h1 {
-  color: blue;
+  color: green;
+}
+
+body {
+  color: red;
 }
