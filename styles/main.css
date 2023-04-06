@@ -4,12 +4,27 @@
   background-color: blue;
 } */
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-bar {
+  background-color: grey;
+  position: sticky;
+  width: 100vw;
+  height: 50px;
+}
+
+.nav-option {
+  position: absolute;
+  padding: 1em;
+  float: left;
+}
+
+
 /* element styles */
 
 h1 {
   color: green;
-}
-
-body {
-  color: red;
 }
