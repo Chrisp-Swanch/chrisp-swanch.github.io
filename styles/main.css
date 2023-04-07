@@ -4,22 +4,32 @@
   background-color: blue;
 } */
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   padding: 0px;
   margin: 0px;
 }
 
 .nav-bar {
+  display: flex;
   background-color: grey;
   position: sticky;
   width: 100vw;
   height: 50px;
 }
 
+.icon {
+  padding: 0.7em;
+}
+
 .nav-option {
-  position: absolute;
   padding: 1em;
-  float: left;
+  font-family: courier;
+  text-decoration: none;
 }
 
 
