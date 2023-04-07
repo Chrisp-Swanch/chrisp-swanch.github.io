@@ -6,6 +6,10 @@ a {
   color: black;
 }
 
+div {
+  position: relative;
+}
+
 body {
   background-color: bisque;
   padding: 0px;
@@ -51,13 +55,17 @@ p {
 }
 
 .blogs-blog-item {
+  z-index: 1;
   padding: 1.5em 3em 0.7em 3em;
+  margin-top: -3px;
+  margin-bottom: -3px;
   border-style: solid;
   border-width: 3px 0px 3px 0px;
   border-color: black;
 }
 
 .blogs-blog-item:hover {
+  z-index: 2;
   background-color: rgba(255, 255, 255, 0.4);
   border-color: rgb(133, 245, 118);
 }
