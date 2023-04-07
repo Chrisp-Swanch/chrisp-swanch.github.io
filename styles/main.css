@@ -29,6 +29,12 @@ p {
   color: black;
 }
 
+.blogpost-paragraph {
+  font-family: poppins, monospace;
+  width: 33vw;
+  color: black;
+}
+
 h1 {
   font-family: raleway, monospace;
   font-size: 40px;
@@ -45,6 +51,7 @@ h3 {
   font-family: raleway, monospace;
   font-size: 18px;
   font-weight: semibold;
+  width: 73%;
   color: black;
 }
 
@@ -56,7 +63,7 @@ h3 {
   margin: auto;
   width: 60%;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px 10px 10px 10px;
+  padding: 40px 16px 16px 16px;
 }
 
 .blogs-blog-section {
@@ -107,6 +114,10 @@ h3 {
   color: black;
 }
 
+.blogpost-header-top-padding {
+  padding-top: 40px;
+}
+
 #home-title-text {
   font-family: raleway, monospace;
   font-size: 70px;
@@ -128,5 +139,12 @@ h3 {
     width: 80%;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 40px 10px 10px 10px;
+  }
+  h3 {
+    width: auto
+  }
+  .blogpost-paragraph {
+    font-family: poppins, monospace;
+    width: auto;
   }
 }
