@@ -22,8 +22,12 @@ p {
   width: 33vw;
 }
 
-.next-header {
+.home-next-header {
   padding-top: 2em;
+}
+
+.blogs-next-header {
+  padding-top: 1em;
 }
 
 .nav-bar {
