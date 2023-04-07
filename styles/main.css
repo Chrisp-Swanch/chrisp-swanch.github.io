@@ -13,6 +13,17 @@ body {
   margin: 0px;
 }
 
+.page-body {
+  padding: 1em 3em 3em 3em;
+}
+
+p {
+  font-family: poppins, monospace;
+  width: 33vw;
+}
+
+
+
 .nav-bar {
   display: flex;
   background-color: white;
@@ -36,6 +47,20 @@ body {
 
 /* element styles */
 
+#home-title-text {
+  font-family: raleway, monospace;
+  font-size: 50px;
+}
+
 h1 {
-  color: green;
+  font-family: raleway, monospace;
+  font-size: 30px;
+  color: black;
+}
+
+@media (max-width: 750px) {
+  p {
+    font-family: poppins, monospace;
+    width: 60vw;
+  }
 }
