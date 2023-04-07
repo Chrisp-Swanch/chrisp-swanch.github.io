@@ -1,7 +1,6 @@
 /* root styles */
 
 
-
 a {
   text-decoration: none;
   color: black;
@@ -11,23 +10,15 @@ body {
   background-color: bisque;
   padding: 0px;
   margin: 0px;
+  opacity: 1;
 }
 
 .page-body {
   padding: 1em 3em 3em 3em;
 }
 
-p {
-  font-family: poppins, monospace;
-  width: 33vw;
-}
-
-.home-next-header {
-  padding-top: 2em;
-}
-
-.blogs-next-header {
-  padding-top: 1em;
+.blogs-blog-section {
+  padding: 0em 0em 0em 0em;
 }
 
 .nav-bar {
@@ -50,8 +41,31 @@ p {
   text-decoration: none;
 }
 
+p {
+  font-family: poppins, monospace;
+  width: 33vw;
+}
 
-/* element styles */
+.home-next-header {
+  padding-top: 2em;
+}
+
+.blogs-blog-item {
+  padding: 1.5em 3em 0.7em 3em;
+  border-style: solid;
+  border-width: 3px 0px 3px 0px;
+  border-color: black;
+}
+
+.blogs-blog-item:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgb(133, 245, 118);
+}
+
+.blog-header {
+  margin: 0px;
+  color: black;
+}
 
 #home-title-text {
   font-family: raleway, monospace;
