@@ -23,6 +23,25 @@ body {
   margin: 0px;
 }
 
+p {
+  font-family: poppins, monospace;
+  width: 33vw;
+  color: black;
+}
+
+h1 {
+  font-family: raleway, monospace;
+  font-size: 40px;
+  color: black;
+}
+
+h2 {
+  font-family: raleway, monospace;
+  font-size: 18px;
+  font-weight: semibold;
+  color: black;
+}
+
 .page-body {
   padding: 1em 3em 3em 3em;
 }
@@ -48,12 +67,6 @@ body {
   font-size: 1em;
   font-family: poppins, monospace;
   text-decoration: none;
-}
-
-p {
-  font-family: poppins, monospace;
-  width: 33vw;
-  color: black;
 }
 
 .home-next-header {
@@ -87,12 +100,6 @@ p {
   margin: 0.7em;
   margin-top: 1em;
   margin-left: 0em;
-}
-
-h1 {
-  font-family: raleway, monospace;
-  font-size: 40px;
-  color: black;
 }
 
 @media (max-width: 750px) {
