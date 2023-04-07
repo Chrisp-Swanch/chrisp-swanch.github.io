@@ -1,8 +1,6 @@
 /* root styles */
 
-/* :root {
-  background-color: blue;
-} */
+
 
 a {
   text-decoration: none;
@@ -22,7 +20,7 @@ body {
   height: 50px;
 }
 
-.icon {
+.nav-icon {
   padding: 0.7em;
 }
 
