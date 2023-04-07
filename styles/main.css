@@ -22,13 +22,15 @@ p {
   width: 33vw;
 }
 
-
+.last-paragraph {
+  margin-bottom: 6em;
+}
 
 .nav-bar {
   display: flex;
   background-color: white;
   opacity: 0.7;
-  position: sticky;
+  position: fixed;
   width: 100vw;
   height: 50px;
 }
@@ -49,12 +51,14 @@ p {
 
 #home-title-text {
   font-family: raleway, monospace;
-  font-size: 50px;
+  font-size: 70px;
+  margin: 0.7em;
+  margin-left: 0em;
 }
 
 h1 {
   font-family: raleway, monospace;
-  font-size: 30px;
+  font-size: 40px;
   color: black;
 }
 
@@ -63,4 +67,11 @@ h1 {
     font-family: poppins, monospace;
     width: 60vw;
   }
+  .page-body {
+    padding: 0.7em 2.4em 2.4em 2.4em;
+  }
+}
+
+hr {
+  color: black;
 }
