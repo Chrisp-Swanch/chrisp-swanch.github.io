@@ -9,6 +9,10 @@ a {
   color: black;
 }
 
+.paragraph-link {
+  color: orange;
+}
+
 a:hover {
   position: relative;
   text-decoration: none;
