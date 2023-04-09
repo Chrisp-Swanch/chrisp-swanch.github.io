@@ -1,5 +1,7 @@
-/* root styles */
-
+* {
+  font-family: poppins, monospace;
+  color: black;
+}
 
 a {
   position: relative;
@@ -60,6 +62,8 @@ h3 {
 }
 
 .blogpost-container {
+  position: relative;
+  display: flex;
   margin: auto;
   width: 60%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -118,6 +122,14 @@ h3 {
   padding-top: 40px;
 }
 
+.blogpost-image {
+  margin: 30px 0px 30px 0px;
+  width: 70%;
+  height: auto;
+  position: relative;
+  display: flex;
+}
+
 #home-title-text {
   font-family: raleway, monospace;
   font-size: 70px;
@@ -146,5 +158,8 @@ h3 {
   .blogpost-paragraph {
     font-family: poppins, monospace;
     width: auto;
+  }
+  .blogpost-image {
+    width: 80vw;
   }
 }

@@ -34,13 +34,117 @@
 
     <section class="blogpost-container">
       <div>
-        <h2>Something Something Title</h2> 
+        <h2>Absolute, Fixed, and Relative Position</h2> 
         <h3>Sprint Two - Tech</h3>
         <hr style="color: black"/>
-        <h3>Here's a subheading</h3>
-        <p>Here is the content of my blog post</p>
-      </div>
-    </section>
+
+        <p class="blogpost-paragraph"><em>8 April 2023</em></p>
+
+        <h3>The Differences Between Absolute, Fixed, and Relative Positioning in CSS</h3>
+        <p class="blogpost-paragraph">When creating elements on a webpage, they should have position properties to get them to where they need to be on the page. Four such variations of position properties are <strong>static</strong> (the default), <strong>absolute</strong>, <strong>fixed</strong>, and <strong>relative</strong>.</p>
+        <p class="blogpost-paragraph">Here I've made four boxes. By default, they stack vertically as per the <strong>normal flow</strong> of the document.</p>
+        
+        <img class="blogpost-image" src="../images/s2-tech-blog-001.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph"><strong>Normal flow</strong> is essentially the default layout of the elements you put in an HTML document. You can think of this like a pan of brownies, where each piece sits next to the others in a single layer.</p>
+        <p class="blogpost-paragraph">Each of the boxes has a default position property of <strong>static</strong>.</p>
+        <p class="blogpost-paragraph"><strong>Static</strong> positioning means that your elements will follow the normal flow, and adding position properties in the CSS stylesheet like <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> will have no effect. The yellow squiggle denotes that it will not work- and the box does not move on screen when I refresh the browser window.</p>
+
+        <img style="width: 231px; height: 81px;" class="blogpost-image" src="../images/s2-tech-blog-002.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">Giving your CSS styles a position property of <strong>absolute</strong>, <strong>fixed</strong>, or <strong>relative</strong> will change these characteristics.</p>
+
+        <h3 class="blogpost-header-top-padding">Absolute Positioning</h3>
+        <p class="blogpost-paragraph">The most important characteristics to note about <strong>absolute</strong> position are;</p>
+        <p class="blogpost-paragraph">They will be <strong>removed from the normal flow</strong> of the document. Imagine again a pan of brownies, but now there are two layers instead- pieces on the bottom layer can occupy the space below pieces on the second layer.</p>
+        <p class="blogpost-paragraph">Here, the yellow box has been given a position property of <strong>absolute</strong>.</p>
+
+        <img style="width: 320px; height: 96px;" class="blogpost-image" src="../images/s2-tech-blog-003.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">The result is that the grey box jumps up to occupy the space underneath the yellow one- imagine the yellow box is stacked on top. The grey box is still in the <strong>normal flow</strong>, but the yellow one is not.</p>
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-004.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">The next thing to know about <strong>absolute</strong> position is that you can, and should <strong>apply additional position properties</strong> such as <strong>top</strong>, <strong>right</strong>, and so on. Here, the orange box has been given <strong>absolute</strong> position, and a <strong>left</strong> position of 100px.</p>
+
+        <img style="width: 253px; height: 107px;" class="blogpost-image" src="../images/s2-tech-blog-005.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">As a result, it is removed from the normal flow (subsequent boxes jump upwards to fill the gap), and it is shifted 100px from the left of the viewport. Imagine that the orange brownie is sitting on top of the red one, and it's shifted over from the edge of the pan.</p>
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-006.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">In this case, the <strong>pan</strong> can be considered the <strong>parent element</strong> of the orange brownie, as the <strong>left</strong> property is relative to the edge of the pan- in terms of HTML code, the parent item would be the <strong>body</strong> element, which is like a container for all the elements within it.</p>
+        <p class="blogpost-paragraph">Elements with <strong>absolute</strong> position will be positioned <strong>relative to the closest ancestor with position defined</strong>. This applies for elements that are nested inside other elements, ie. they are children of parent elements. Think of this like Russian dolls, where each sits inside the last one.</p>
+        <p class="blogpost-paragraph">In the HTML below, each box is now nested to the previous box- The grey box is inside the yellow box, which is inside the brown box, which is inside the orange box, and the orange box is inside the 'body' element, or the 'pan' to use the brownie analogy.</p>
+
+        <img style="width: 267px; height: 361px;" class="blogpost-image" src="../images/s2-tech-blog-007.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">Here they are arranged on screen with some additional CSS styling applied so that they sit centred, on top of one another. Note that they all have their default position of <strong>static</strong>, and are considered to be in the normal flow.</p>
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-008.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">If I set the grey box to have <strong>absolute</strong> position, nothing will happen. That is because it <strong>needs to have additional position properties (left, right etc) to move</strong>. See below what happens when I set the <strong>top</strong> and <strong>left</strong> values to 0px, with position as <strong>absolute</strong>.</p>
+
+        <img style="width: 222px; height: 152px;" class="blogpost-image" src="../images/s2-tech-blog-009.png" alt="No image found :(">
+        <img class="blogpost-image" src="../images/s2-tech-blog-010.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">The grey box jumps to the top left corner, because it is positioning itself 0px from the <strong>top</strong> and <strong>left</strong> of it's closest parent element with position defined, in this case it's the <strong>body</strong> element, or the 'brownie pan'. Now I'll set the brown box to <strong>absolute</strong> position, and the grey box will jump to the corner of the brown box.</p>
+   
+        <img class="blogpost-image" src="../images/s2-tech-blog-011.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">Now the grey box is positioned relative to the brown box. Below you can see that adjusting other position properties will move the grey box relative to the brown box.</p>
+
+        <img style="width: 222px; height: 156px;" class="blogpost-image" src="../images/s2-tech-blog-012.png" alt="No image found :(">
+        <img class="blogpost-image" src="../images/s2-tech-blog-013.png" alt="No image found :(">
+
+        <h3 class="blogpost-header-top-padding">Fixed Positioning</h3>
+        <p class="blogpost-paragraph">Elements with their position set to <strong>fixed</strong> will stay in place on screen even when the user scrolls- think of a navigation bar at the top of the screen which remains in place as you scroll down the page.</p>
+        <p class="blogpost-paragraph">Just like with absolute position, <strong>fixed</strong> position will remove the element from the normal flow. However unlike absolute, <strong>fixed</strong> elements are always positioned relative to the browser window/body element, as long as they have <strong>top</strong>, <strong>right</strong>, <stong>bottom</stong> etc values defined also. Here, the grey box is positioned <strong>fixed</strong>, with 10px <strong>top</strong> and <strong>left</strong>.</p>
+
+        <img style="width: 223px; height: 160px;" class="blogpost-image" src="../images/s2-tech-blog-014.png" alt="No image found :(">
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-015.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">When the user scrolls, the grey box will remain in place.</p>
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-016.png" alt="No image found :(">
+
+        <h3 class="blogpost-header-top-padding">Relative Positioning</h3>
+        <p class="blogpost-paragraph">The main difference to note about elements with <strong>relative</strong> position, is that unlike absolute and fixed, they will <strong>remain in the normal flow</strong>. Here are the boxes stacked in the normal flow as before, like brownie pieces neatly lined up in the pan.</p>
+        
+        <img class="blogpost-image" src="../images/s2-tech-blog-017.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">Applying <strong>relative</strong> position means that the element will be positioned <strong>relative to it's original position as per the normal flow</strong>, and other elements around it will behave as if it is still in it's original position. Here, the brown box has been given <strong>relative</strong> position, a <strong>top</strong> value of 10px, and a <strong>left</strong> value of 30px.</p>
+
+        <img style="width: 248px; height: 129px;" class="blogpost-image" src="../images/s2-tech-blog-018.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">Notice how it has moved from its original position in the normal flow, and the yellow and grey boxes remain where they are, as if the brown box was still in place.</p>
+
+        <img class="blogpost-image" src="../images/s2-tech-blog-019.png" alt="No image found :(">
+
+        <p class="blogpost-paragraph">In summary, the key characteristic of <strong>absolute</strong>, <strong>fixed</strong>, and <strong>relative</strong> position are;</p>
+        <ul class="blogpost-paragraph">
+          <li><strong>Absolute</strong></li>
+            <ul>
+              <li>Elements are removed from the normal flow.</li>
+              <li>Elements are positioned relative to their closest parent ancestor that has a position property defined.</li>
+            </ul>
+          <p></p>
+          <li><strong>Fixed</strong></li>
+            <ul>
+              <li>Elements are removed from the normal flow.</li>
+              <li>Elements will stay in place as the user scrolls.</li>
+            </ul>
+          <p></p>
+            <li><strong>Relative</strong></li>
+            <ul>
+              <li>Elements remain in the normal flow.</li>
+              <li>Elements are positioned relative to their original position as per the normal flow.</li>
+              <li>Surrounding elements will behave as if the element is still occupying it's original position.</li>
+            </ul>
+        </ul>
+
+      </section>
     
   </body>
 
