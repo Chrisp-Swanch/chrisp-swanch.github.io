@@ -29,6 +29,12 @@ body {
   margin: 0px;
 }
 
+ul {
+  font-family: poppins, monospace;
+  width: 33vw;
+  color: black;
+}
+
 p {
   font-family: poppins, monospace;
   width: 33vw;
@@ -128,6 +134,10 @@ h3 {
   padding-top: 40px;
 }
 
+.more-padding {
+  padding-top: 40px;
+}
+
 .blogpost-image {
   margin: 30px 0px 30px 0px;
   width: 70%;
@@ -148,6 +158,9 @@ h3 {
   p {
     font-family: poppins, monospace;
     width: 80vw;
+  }
+  li {
+    width: 65vw;
   }
   .page-body {
     padding: 0.7em 2.4em 2.4em 2.4em;
