@@ -35,6 +35,10 @@ ul {
   color: black;
 }
 
+li {
+  width: 30.5vw;
+}
+
 p {
   font-family: poppins, monospace;
   width: 33vw;
