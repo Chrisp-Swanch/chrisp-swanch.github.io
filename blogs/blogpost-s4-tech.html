@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&family=Raleway:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <title>Chris's Blog</title>
+  </head>
+
+  <body>
+
+    <section class="nav-bar">
+        <img src="../images/leaf_icon.svg" alt="Home Icon" class="nav-icon">
+      <div class="nav-option">
+        <a href="../index.html">
+          Home
+        </a>
+      </div>
+      <div class="nav-option">
+        <a href="../index.html#te-houtaewa-header">
+          Te Houtaewa
+        </a>
+      </div>
+      <div class="nav-option">
+        <a href="blogs.html">
+          Blogs
+        </a>
+      </div>
+    </section>
+
+
+    <section class="blogpost-container">
+      <div>
+        <h2>Problem Solving</h2> 
+        <h3>Sprint Four - Tech</h3>
+        <hr style="color: black"/>
+
+        <p class="blogpost-paragraph"><em>21 April 2023</em></p>
+
+        <h3>Talk about a time you were blocked on a simple problem?</h3>
+
+        <ul>
+          <li><em>What was the problem?</em></li>
+          <li><em>What problem-solving techniques did you use?</em></li>
+          <li><em>How did you feel throughout the process?</em></li>
+          <li><em>What did you learn?</em></li>
+        </ul>
+
+        <p class="blogpost-paragraph">I was having trouble in challenge 2, Manipulating Objects. I had to look up how to add object properties- in this case we were trying to add 'children' properties, and give them 'name' keys that contained the child's name.
+        </p>
+        <ul>
+          <li>I Googled how to do this (the answer is to use dot notation)</li>
+          <li>I tried breaking it down, and just adding the properties without giving them names. Once I confirmed that was working, I assigned their names.</li>
+        </ul>   
+
+        <img style="width: 70%" class="blogpost-image" src="../images/s4-tech-blog-001.png" alt="No image found :(">
+      
+        <ul>
+          <li>I 'tried' things out. The red squiggly likes in VSCode can be helpful to see if something you've written will or won't work.</li>
+          <li>At each step (not just of this challenge, but throughout the katas), I would be using console.log and 'typeof' to check my progress and see if I was getting the results I wanted as I built my solutions. Eg, for the deBee challenge, I'd be running these all the time:</li>
+          <li style="list-style: none">
+              <img style="width: 70%" class="blogpost-image" src="../images/s4-tech-blog-002.png" alt="No image found :(">
+          </li>
+          <li style="list-style: none">
+            <img style="width: 70%" class="blogpost-image" src="../images/s4-tech-blog-003.png" alt="No image found :(">
+          </li>
+        </ul>   
+
+        <p class="blogpost-paragraph">
+          This exercise expanded my understanding of dot notation, to access and manipulate properties inside objects.
+        </p>
+
+        <h3 class="blogpost-header-top-padding">Talk about a time you elegantly solved a problem?</h3>
+        
+        <ul>
+          <li><em>What was the problem?</em></li>
+          <li><em>What problem-solving techniques did you use?</em></li>
+          <li><em>How did you feel throughout the process?</em></li>
+          <li><em>What did you learn?</em></li>
+        </ul>
+
+        <p class="blogpost-paragraph">
+          In the deBee challenge, we had to use array.filter() to filter out the word 'buzz' from a string.
+        </p>
+        <p class="blogpost-paragraph">
+          When I went to solve this, I thought that the best approach would be one where 'buzz' was a regular expression, because then it could account for capitalisations and/or other variations in the word. To do this, I had to refresh myself on regular expression syntax by Googling a cheat-sheet. Then I hit a problem- I could get the function to filter for the word 'buzz', but not to filter 'not' the word buzz. I tried;
+        </p>
+
+        <ul>
+          <li>Using an if statement</li>
+          <li>Using return !word.match('buzz')</li>
+        </ul>
+ 
+        <p class="blogpost-paragraph">
+          But these wouldn't work.
+        </p>
+        <p class="blogpost-paragraph">
+          Throughout the process, I felt a bit unsure of my approach, as if "maybe I'm going too far with trying to use a regular expression when I could try something else?", but I was curious to discover the answer- I knew there must be a way to get the inverse, and I knew that it would be useful knowledge to have going forward. I felt the same in my initial exploration of this approach during the Capitalisation challenge.
+        </p>
+        <p class="blogpost-paragraph">
+          Sure enough, I found the answer !function(word) after a quick Google. I think my answer is pretty neat, and was a good learning experience. No complex conditional things, just a single variable that accounts for variations, and it's easy to change, if for instance I wanted to filter for a different word.
+        </p>
+
+        <img style="width: 90%" class="blogpost-image" src="../images/s4-tech-blog-004.png" alt="No image found :(">
+
+        <h3 class="blogpost-header-top-padding">Reflect on how confident you feel using each of these problem-solving techniques/processes?</h3>
+        
+        <ul>
+          <li><em>Pseudocode</em></li>
+          <li><em>Trying something</em></li>
+          <li><em>Rubber ducky method</em></li>
+          <li><em>Reading error messages</em></li>
+          <li><em>Console.logging</em></li>
+          <li><em>Googling</em></li>
+          <li><em>Asking peers for help</em></li>
+          <li><em>Asking coaches for help</em></li>
+          <li><em>Improving your process with reflection</em></li>
+        </ul>
+
+        <p class="blogpost-paragraph">
+          Of the given problem-solving techniques, I'm constantly reading error messages and console logging (including typeof) in the first instance. Then I'll try things to see what I can recall, and if I need reference, I'll Google. Sometimes Googling the method I'm using will be the first step, especially if it's a new concept.
+        </p>
+        <p class="blogpost-paragraph">
+          Pseudocode was also useful to map out a plan for what I wanted to do. I used rubber ducky a bit too. I'm comfortable with improving my process with reflection- even in writing this blog about problems I had, I had an insight and managed to go back and make an improvement to the whereAreYou answer.
+        </p>
+        <p class="blogpost-paragraph">
+          Asking others is usually a last resort. I didn't need to for the Katas, but I have done for other things. Another thing I've been doing is checking my notes, because I write down a lot!
+        </p>
+
+        <h3 class="blogpost-header-top-padding">Reflect on a time you were reluctant to ask for help? Consider what made you reluctant to do so</h3>
+
+        <p class="blogpost-paragraph">
+          I don't think I hit the required 'threshold of confusion' to ask for help during these exercises. I'm also much more comfortable asking questions and discussing things in person, rather than across Discord etc. I feel I'm able to articulate myself better that way, and you tend to get instant feedback rather than waiting for a response.
+        </p>
+        <p class="blogpost-paragraph">
+          The real benefit of asking questions in this way is that the problem is documented, and others can benefit from reading the discussion. Where would we be if not for the millions of forum posts online where people have asked about specific problems?
+        </p>
+        <p class="blogpost-paragraph">
+          I tend to think that figuring something out by myself is a generally better learning experience than asking for help, because I have to sit with the problem and think deeply about it before I find an answer, and that process leads to better retention- however I think this could be a misconception that I could try to break away from. Certainly in-person knowledge sharing is the gold standard.
+        </p>
+
+      </section>
+    
+  </body>
+
+</html>
